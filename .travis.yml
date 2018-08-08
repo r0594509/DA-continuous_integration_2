@@ -13,4 +13,5 @@ services:
 script:
 - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
 - mvn clean package docker:build
-- docker push olmanstnathan/da2
+- docker build -t olmanstnathan/da2:test1
+- docker push olmanstnathan/da2:test1
